@@ -1,0 +1,11 @@
+[Unit]
+Description=Go Lang HTTP server
+
+[service]
+User=jenkins
+WorkingDirectory=/opt/golang--http-server/
+ExecStart=/opt/golang-http-server/serve
+
+[Install]
+WantedBy=multi-user.target
+
